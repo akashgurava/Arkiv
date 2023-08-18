@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug ArkivClient",
+            "program": "${workspaceFolder:Arkiv}/.build/debug/ArkivClient",
+            "args": [],
+            "cwd": "${workspaceFolder:Arkiv}",
+            "preLaunchTask": "swift: Build Debug ArkivClient"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release ArkivClient",
+            "program": "${workspaceFolder:Arkiv}/.build/release/ArkivClient",
+            "args": [],
+            "cwd": "${workspaceFolder:Arkiv}",
+            "preLaunchTask": "swift: Build Release ArkivClient"
+        }
+    ]
+}
